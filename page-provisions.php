@@ -1,4 +1,14 @@
 <?php get_header(); ?>
+<div class="menu-holder">
+	<div class="menu_pic"><img src="<?php the_field('menu_pic') ?>" alt=""></div>
+	<div class="menu-caption">
+		<div class="menu-svg" style="background:black;width:25%;display:inline-block;"><img style="background:none;" src="<?php the_field('menu_svg') ?>" /></div>
+		<div class="Menu-content" style="display:inline-block;width:74%;">
+			<?php the_field('menu_text') ?>
+			<a style="background:black;color:white;padding:2%;margin:auto;text-transform:uppercase;font-size:10px;margin-top:2%;" href="<?php the_field('menu') ?>">download the goat.sheep.cow. Half-mile-noth Menu</a>
+		</div>
+	</div>
+</div>
 <div class="provisions-cont">
 	<div class="header table">
 		<div class="table-cell">
@@ -9,7 +19,7 @@
 		<?php the_content(); ?>
 		<?php endwhile; ?>
 		</div>
-		
+
 	</div>
 	<div class="overflow-fix">
 		<div class="provisions-wrapper table" id="provisions">
@@ -24,7 +34,7 @@
 							 	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/<?php echo strtolower($cat->cat_name) ?>-drawing@2x.gif">
 								<p><?php echo strtolower($cat->cat_name); ?></p>
 						 	</div>
-							 <?php 
+							 <?php
 							 if ($cat->term_id == 3) {
 								 $children = get_categories( array('parent' => $cat->term_id, 'hide_empty' => false,'orderby' => 'id') );
 									if($children) { ?>
@@ -60,11 +70,11 @@
 								</div>
 							</div>
 						<?php } ?>
-					</div>	
+					</div>
 				</li>
 				<?php endwhile; wp_reset_query(); ?>
 			</div>
-			
+
 		</div>
 	</div>
 </div>

@@ -52,14 +52,11 @@
 			</div>
 			<div class="nav">
 				<?php wp_nav_menu(array('menu' => "Main Nav")) ?>
-				<li class="social">
+				<!-- <li class="social">
 					<a target=_blank class="facebook" href="<?php the_field('facebook_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook@2x.png" /></a>
 					<a target=_blank class="instagram" href="<?php the_field('instagram_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram@2x.png" /></a>
 					<a target=_blank class="twitter" href="<?php the_field('twitter_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter@2x.png" /></a>
-				</li>
+				</li> -->
 
 			</div>
-		</header>	
-
-	
-
+		</header>

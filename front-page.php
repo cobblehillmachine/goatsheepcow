@@ -30,25 +30,28 @@
 	</div>
 
 </div>
-
+<h1 style="text-align:center;padding:2%;padding-bottom:0;">Two Locations in Downtown Charleston</h1>
 <div class="homepage cont">
 	 <?php while ( have_posts() ) : the_post();?>
 	 <div class="row first">
 		<hr>
 		<div class="left-cont sandwich-of-day">
-
-			<div id="instafeed"></div>
+			<?php the_field('sandwich_of_the_day') ?>
+			<!-- <p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
+			<a class="underline" href="/contact">Learn More</a> -->
+			<!-- <div id="instafeed"></div> -->
 		</div>
 
 		<div class="right-cont location">
 			<?php the_field('location_details') ?>
-			<p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
-			<a class="underline" href="/contact">Learn More</a>
+			<!-- <p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
+			<a class="underline" href="/contact">Learn More</a> -->
 		</div>
 		<hr>
 	</div>
 
 	 <div class="row second">
+		<h1 style="text-align:center;padding:3%;">Available at Each Location</h1>
 		<div class="left-cont sandwich-of-day-info">
 			<?php the_field('daily_sandwich_info') ?>
 		</div>
