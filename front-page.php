@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 <div class="flexslider-wrapper">
-	
+
 	<div class="flexslider homepage">
 		<ul class="slides">
-		<?php while( have_rows('slider_images') ): the_row(); 
+		<?php while( have_rows('slider_images') ): the_row();
 			$image = get_sub_field('image');
 			$text = get_sub_field('content');
-			$cta_text = get_sub_field('cta_text'); 
+			$cta_text = get_sub_field('cta_text');
 			$cta_link = get_sub_field('cta_link'); ?>
 			<li>
-			
+
 				<img src="<?php echo $image ?>">
 				<?php if ($text) { ?>
 				<div class="caption-cont hidden">
@@ -17,15 +17,15 @@
 						<?php echo $text ?>
 					</div>
 					<a class="underline" href="<?php echo $cta_link ?>"><?php echo $cta_text ?></a>
-				</div>	
-			<?php } ?>			
+				</div>
+			<?php } ?>
 			</li>
 		<?php endwhile; ?>
 		</ul>
 	</div>
 	<div class="caption-wrapper">
 		<div class="caption">
-			
+
 		</div>
 	</div>
 
@@ -36,10 +36,10 @@
 	 <div class="row first">
 		<hr>
 		<div class="left-cont sandwich-of-day">
-	
+
 			<div id="instafeed"></div>
 		</div>
-	
+
 		<div class="right-cont location">
 			<?php the_field('location_details') ?>
 			<p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
@@ -47,12 +47,12 @@
 		</div>
 		<hr>
 	</div>
-	
+
 	 <div class="row second">
 		<div class="left-cont sandwich-of-day-info">
-			<?php the_field('daily_sandwich_info') ?>			
+			<?php the_field('daily_sandwich_info') ?>
 		</div>
-	
+
 		<div class="right-cont cheese-plate-info">
 			<?php the_field('cheese_plates_info') ?>
 		</div>
@@ -63,14 +63,14 @@
 <div class="homepage bottom">
 	<div class="image-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cheese-montage.jpg" /></div>
 	<div class="cheese-montage">
-		
+
 		<div class="content">
 			<?php the_content() ?>
 		</div>
-		
+
 		<?php endwhile; ?>
 	</div>
-	<div class="keep-in-touch">
+	<!-- <div class="keep-in-touch">
 		<div class="border">
 			<div class="inner-border">
 				<div class="sideways mobile">
@@ -86,7 +86,8 @@
 		<div class="sideways desktop">
 			<p>Keep in touch</p>
 		</div>
-	</div>
+	</div> -->
+	<div class="image-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cheese-montage.jpg" /></div>
 </div>
 
 <?php get_footer(); ?>
