@@ -5,7 +5,7 @@
 		<div class="menu-svg" style="background:black;width:25%;display:inline-block;"><img style="background:none;" src="<?php the_field('menu_svg') ?>" /></div>
 		<div class="Menu-content" style="display:inline-block;width:74%;">
 			<?php the_field('menu_text') ?>
-			<a style="background:black;color:white;padding:2%;margin:auto;text-transform:uppercase;font-size:10px;margin-top:2%;" href="<?php the_field('menu') ?>">download the goat.sheep.cow. Half-mile-noth Menu</a>
+			<a style="margin:auto;background:black;color:white;padding:8px;margin:auto;text-transform:uppercase;font-size:10px;display:block;width:70%;font-size:8px;margin-top:2%;" href="<?php the_field('menu') ?>">download the goat.sheep.cow. Menu</a>
 		</div>
 	</div>
 </div>

@@ -13,14 +13,17 @@
 				<div class="footer-left">
 					<ul>
 						<li><h4>Goat.Sheep.Cow</h4></li>
+					</br>
+						<li><h4>South-of-broad</h4></li>
 						<br>
 						<a target=_blank href="<?php the_field('google_map_link', 'user_3') ?>">
-							<li><h4><?php the_field('street_address', 'user_3'); ?></h4></li>
+							<li><h4><?php the_field('street_address', 'user_3'); ?></h4></li></br>
 							<li><?php the_field('city_state', 'user_3'); ?></li>
 						</a>
 					</ul>
-
+				</br>
 					<?php the_field('hours', 'user_3') ?>
+				</br>
 					<li><h4><?php the_field('phone_number', 'user_3'); ?></h4></li><br/>
 					<a target=_blank href="<?php the_field('facebook_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-black@2x.png" /></a>
 					<a target=_blank href="<?php the_field('instagram_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-black@2x.png" /></a>
@@ -39,18 +42,21 @@
 				</div>
 				<div class="footer-right">
 					<ul>
-						<li><h4>Goat.Sheep.Cow NORTH</h4></li>
+						<li><h4>Goat.Sheep.Cow</h4></li>
+					</br>
+						<li><h4>half-mile-north</h4></li>
 						<br>
 						<a target=_blank href="<?php the_field('google_map_link_north', 'user_3') ?>">
-							<li><h4><?php the_field('street_address_north', 'user_3'); ?></h4></li>
+							<li><h4><?php the_field('street_address_north', 'user_3'); ?></h4></li><br/>
 							<li><?php the_field('city,_state_north', 'user_3'); ?></li>
 						</a>
 					</ul>
-
+				</br>
 					<?php the_field('hours_north', 'user_3') ?>
+				</br>
 					<li><h4><?php the_field('phone_number_north', 'user_3'); ?></h4></li><br/>
 					<a target=_blank href="<?php the_field('facebook_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-black@2x.png" /></a>
-					<a target=_blank href="<?php the_field('instagram_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-black@2x.png" /></a>
+					<a target=_blank href="https://www.instagram.com/goatsheepcownorth/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-black@2x.png" /></a>
 					<a target=_blank href="<?php the_field('twitter_link', 'user_3') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter-black@2x.png" /></a>
 				</div>
 				<hr>
@@ -59,7 +65,7 @@
 			<div class="footer-main mobile">
 				<div class="footer-left">
 					<ul class="address">
-						<li><h4>Goat.Sheep.Cow</h4></li>
+						<li><h4>Goat.Sheep.Cow SOUTH</h4></li>
 						<a target=_blank href="<?php the_field('google_map_link', 'user_3') ?>">
 							<li><h4><?php the_field('street_address', 'user_3'); ?></h4></li>
 							<li><?php the_field('city_state', 'user_3'); ?></li>

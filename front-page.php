@@ -40,12 +40,38 @@
 			<!-- <p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
 			<a class="underline" href="/contact">Learn More</a> -->
 			<!-- <div id="instafeed"></div> -->
+			<a class="instaHolder" target=_blank href="<?php the_field('instagram_link', 'user_3') ?>"><img class="insta" src="<?php echo get_template_directory_uri(); ?>/assets/images/Vector Smart Object3.png" /></a>
+			<div class="hours-of-op">
+				<div class="border">
+					<div class="label sideways">
+						<p>Hours of Operations</p>
+					</div>
+					<div class="inner-border">
+						<div class="hours-container">
+							<?php the_field('hours', 'user_3') ?>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="right-cont location">
 			<?php the_field('location_details') ?>
 			<!-- <p><a target=_blank href="<?php the_field('google_map_link', 'user_2') ?>"><?php the_field('street_address', 'user_2'); ?><br><?php the_field('city_state', 'user_2'); ?></a></p>
 			<a class="underline" href="/contact">Learn More</a> -->
+			<a class="instaHolder" target=_blank href="https://www.instagram.com/goatsheepcownorth/"><img class="insta" src="<?php echo get_template_directory_uri(); ?>/assets/images/Vector Smart Object3.png" /></a>
+			<div class="hours-of-op">
+				<div class="border">
+					<div class="label sideways">
+						<p>Hours of Operations</p>
+					</div>
+					<div class="inner-border">
+						<div class="hours-container">
+							<?php the_field('hours_north', 'user_3') ?>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<hr>
 	</div>
@@ -90,7 +116,7 @@
 			<p>Keep in touch</p>
 		</div>
 	</div> -->
-	<div class="image-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cheese-montage.jpg" /></div>
+	<div class="image-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/goat-sheep-cow-website-v3-(1)_03.jpg" /></div>
 </div>
 
 <?php get_footer(); ?>
